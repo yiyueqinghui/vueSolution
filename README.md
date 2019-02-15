@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # vuestudydemo
 
 > package.json解读
@@ -26,3 +27,6 @@ $ node build.js
 - 参考链接： http://www.ruanyifeng.com/blog/2016/10/npm_scripts.html
 
 
+=======
+# test
+>>>>>>> test/master
