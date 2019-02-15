@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'webfont';
+  src: url('./webfont.eot');
+  src: url('./webfont.svg');
+  src: url('./webfont.ttf');
+  src: url('./webfont.woff');
+
+}
