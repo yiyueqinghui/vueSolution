@@ -29,14 +29,6 @@
         </a>
       </li>
       <li>
-        <a
-          href="https://github.com/vuejs/awesome-vue"
-          target="_blank"
-        >
-          awesome-vue
-        </a>
-      </li>
-      <li>
         <router-link to="/less">
           less使用
         </router-link>
@@ -52,6 +44,30 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  methods:{
+    testPromise:()=>{
+      new Promise((resolve,reject)=>{
+        let ranNum = (Math.random() * 2).toFixed(2);
+        console.log(ranNum);
+        if(ranNum>1){
+          reject(ranNum)
+        }else{
+          resolve(ranNum)
+        }
+      }).then((num)=>{
+        console.log('执行成功！',num);
+      }).catch((num)=>{
+        console.log('执行失败！',num);
+      })
+    }
+  },
+  mounted(){
+    this.$nextTick(()=>{
+      console.log('webpack.dev.conf.js中DefinePlugin定义的全局变量,任何一个地方都可以访问到')
+      console.log('process.env',process.env);
+      this.testPromise();
+    })
   }
 }
 </script>
