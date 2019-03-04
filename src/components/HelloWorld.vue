@@ -1,8 +1,6 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
-    <p><img class="testImg" src="../../static/img/1.jpg" /></p>
-    <p class="bg"></p>
     <ul>
       <li>
         <a
@@ -30,8 +28,41 @@
       </li>
       <li>
         <router-link to="/less">
-          less使用
+           less使用
         </router-link>
+      </li>
+      <li>
+      	<router-link :to="{name:'routeStudy',params:{id:id,status:status},query:{name:name}}">
+      	<!--<router-link :to="{path:'/route',query:{id:id,status:status}}">-->
+      		参数传递
+      	</router-link>
+      </li>
+      <li>
+        <router-link to="/templateGrammer">模板语法/计算属性/观察属性</router-link>
+      </li>
+      <li>
+        <router-link to="/style">style和class</router-link>
+      </li>
+      <li>
+        <router-link to="/if">v-if</router-link>
+      </li>
+      <li>
+        <router-link to="/for"> v-for </router-link>
+      </li>
+      <li>
+        <router-link to="/click"> 事件处理 </router-link>
+      </li>
+      <li>
+        <router-link to="/input-api"> 输入框事件 </router-link>
+      </li>
+      <li>
+        <router-link to="/component-api"> 组件基础 </router-link>
+      </li>
+      <li>
+        <router-link to="/slot-api"> slot插槽 </router-link>
+      </li>
+      <li>
+        <router-link to="/dynamic-api"> 动态/异步组件 </router-link>
       </li>
     </ul>
   </div>
@@ -42,7 +73,10 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Vue api',
+      id:100,
+      status:false,
+      name:'cj'
     }
   },
   methods:{
@@ -90,6 +124,8 @@ export default {
        margin: 0 auto;
        overflow: hidden;
        li{
+         width: 100px;
+         height: 100px;
          color: #dddddd;
          padding:10px 20px;         float: left;
          a{
