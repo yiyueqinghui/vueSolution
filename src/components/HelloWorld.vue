@@ -64,6 +64,9 @@
       <li>
         <router-link to="/dynamic-api"> 动态/异步组件 </router-link>
       </li>
+      <li>
+        <router-link to="/boundary-api"> 边界问题 </router-link>
+      </li>
     </ul>
   </div>
 </template>

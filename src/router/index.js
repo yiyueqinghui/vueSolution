@@ -12,6 +12,7 @@ import InputApi from '@/components/input-api'
 import ComponentApi from '@/components/component-api'
 import SlotApi from '@/components/slot-api'
 import DynamicApi from '@/components/dynamic-component'
+import BoundaryApi from '@/components/boundary-api'
 
 
 Vue.use(Router)
@@ -68,5 +69,9 @@ export default new Router({
       path:'/dynamic-api',
       component:DynamicApi
     },
+    {
+      path:'/boundary-api',
+      component:BoundaryApi
+    }
   ]
 })
