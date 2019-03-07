@@ -26,4 +26,7 @@ export default {
     margin: 0 auto;
     border-collapse: collapse;
   }
+  dl,ul，dd,li{
+    list-style: none;
+  }
 </style>

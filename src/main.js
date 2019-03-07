@@ -4,8 +4,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import store from './store/store'
+import ElementUi from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 
 Vue.prototype.store = store;
+Vue.use(ElementUi);
 
 Vue.config.productionTip = false
 

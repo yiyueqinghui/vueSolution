@@ -11,9 +11,10 @@
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
     "build": "node build/build.js",
-    "self":"echo $npm_package_name"
+    "self": "echo $npm_package_name"
   },
   "dependencies": {
+    "element-ui": "^2.6.1",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "vue": "^2.5.2",

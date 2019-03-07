@@ -67,6 +67,21 @@
       <li>
         <router-link to="/boundary-api"> 边界问题 </router-link>
       </li>
+      <li>
+        <router-link to="/tree-header"> 组件相互引用 </router-link>
+      </li>
+      <li>
+        <router-link to="/animate-api"> 进入/离开动画 </router-link>
+      </li>
+      <li>
+        <router-link to="/customied-order"> 自定义指定 </router-link>
+      </li>
+      <li>
+        <router-link to="/jsx-api"> 渲染函数 & jsx </router-link>
+      </li>
+      <li>
+        <router-link to="/plugin-api"> 插件的使用 </router-link>
+      </li>
     </ul>
   </div>
 </template>
