@@ -19,7 +19,7 @@
       name: "plugin-api",
       data(){
         return {
-
+           arr:['a']
         }
       },
       methods:{
@@ -27,6 +27,20 @@
           console.log(this);
           this.$message('这是一条消息提示');
         }
+      },
+      created(){
+        // this.arr.last = function(){
+        //   console.log('123');
+        // }
+        // this.arr.last();
+        function A(){
+          this.data = 'hellow';
+        }
+        var a = new A();
+        var b = new A();
+        console.log(a);
+        console.log(A.prototype);
+        console.log(a.__proto__);
       }
     }
 </script>

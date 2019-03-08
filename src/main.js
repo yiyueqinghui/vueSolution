@@ -3,11 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+//方法一，prototype引入公共数据
 import store from './store/store'
+Vue.prototype.store = store;
+
+//方法二，Vue.use()引入install安装的插件
 import ElementUi from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-
-Vue.prototype.store = store;
 Vue.use(ElementUi);
 
 Vue.config.productionTip = false
